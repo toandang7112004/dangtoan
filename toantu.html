@@ -7,14 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" name="" id="user name" onchange=" alert(123) "> 
     <script>
-        function TEN_KHOI_XU_LY(){
-            alert(123);
-        }
-        document.getElementById('username').addEventListener('change, function'){
-            
-        }
+        inputWidth = prompt("enter the width");
+        inputHeight = prompt("enter the height");
+        var width = parseInt(inputWidth);
+        var height =parseInt(inputHeight);
+        var area = width * height;
+        document.write("The area is: " + area);
     </script>
 </body>
 </html>
