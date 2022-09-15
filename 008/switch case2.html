@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var day = 5
+        switch (true) {
+            case (day == 2 || day == 3 || day == 4):
+                console.log('di lam');
+                break;
+            case (day == 7):
+                console.log('sinh hoat');
+                break;
+            default:
+                console.log('relax');
+                break;
+        }
+
+
+        var thang = prompt('nhap thang')
+        switch (thang) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                console.log('31 ngay');
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                console.log('30 ngay');
+                break;
+            default:
+                console.log('28 hoac 29 ngay');
+                break;
+        }
+
+
+        var thang =6
+        switch (true) {
+            case (thang ==1||thang ==3||thang ==5||thang ==7||thang ==8||thang ==10||thang ==12):
+                console.log('31 ngay');
+                break;
+                case(thang == 4||thang==6||thang==9||thang==11):
+                console.log('30 ngay');
+                break;
+            default:
+                console.log('28 hoac 29 ngay');
+                break;
+        }
+    </script>
+</body>
+
+</html>
