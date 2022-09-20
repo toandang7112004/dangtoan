@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*BÀI 6*/
+
+        var a = prompt('nhập a')
+        var b = prompt('nhập b')
+        switch (true) {
+            case (a == 0 && b == 0):
+                console.log('phương trình vô nghiệm');
+                break;
+            case (a != 0 && b == 0):
+                console.log('phương trình có 1 nghiệm');
+                break;
+            case (a != 0 && b != 0):
+                console.log('phương trình có x=-b/a');
+                break;
+            default:
+                console.log('phương trình vô nghiệm');
+                break;
+        }
+
+        /*BÀI 7*/
+
+        var a = parseInt(prompt('nhập a'))
+        var b = parseInt(prompt('nhập b'))
+        var c = parseInt(prompt('nhập c'))
+        var delta = (b * b - (4 * a * c))
+        switch (true) {
+            case delta > 0:
+                console.log('ptr có 2 n0');
+                break;
+            case delta < 0:
+                console.log('ptr có vô n0');
+                break;
+            default:
+                console.log('ptr có 1 n0');
+                break;
+        }
+
+        /*BÀI 4*/
+
+        /*Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.*/
+          var a =parseInt(prompt('nhập a'))
+          var b =parseInt(prompt('nhập b'))
+          var c = a * b
+          if (a!=0 && b!=0) {
+              console.log('diện tích hình  chữ nhật là'+ c );
+          } else {
+              console.log('k là diện tích hình  chữ nhật');
+          }
+
+
+        /*BÀI 5*/
+
+        /*Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b*/
+         var a =parseInt(prompt('nhập a'))
+         var b =parseInt(prompt('nhập b'))
+         var c = a*b*1/2
+         if (a != 0 && b != 0) {
+              console.log('diện tích hình vuông là' +c );
+          } else {
+              console.log('k là diện tích hình vuông');
+          }
+
+        /*BÀI 2*/
+
+         var m = prompt ('nhập mét')
+         var ft = m * 3.2808
+         alert('độ dài feet'+ft )
+
+        /*BÀI 1*/
+
+         var n = prompt('nhập độ')
+         var F = n * 9 / 5 + 32
+         alert('độ F=' + F)
+
+
+        /*BÀI 3*/
+
+         var a =parseInt(prompt('nhập a'))
+         var s = a*a
+         if (a != 0) {
+             console.log('diện tích hình vuông là ='+ s);
+         }else{
+             console.log('k là diện tích hình vuông');
+         }
+
+        /*BÀI 8*/
+
+         var w =parseInt(prompt('nhập tuổi'))
+         if (w>0 && w<120) {
+             console.log('tuổi của một người');
+         }else{
+             console.log('k phải là tuổi của một người');
+         }
+
+
+        /*BÀI 9*/
+         var a =parseInt(prompt('nhập cạnh a'))
+         var b =parseInt(prompt('nhập cạnh b'))
+         var c =parseInt(prompt('nhập cạnh c'))
+         switch (true) {
+             case ((a+b>c) && (a+c>b) && (b+c>a)):
+                 console.log('a,b,c là cạnh của một tam giác');
+                 break;
+             default:
+                 console.log('a,b,c k là cạnh của một tam giác');
+                 break;
+         }
+        
+    </script>
+
+</body>
+
+</html>
